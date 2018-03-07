@@ -1,1 +1,3 @@
-alert("Fuck you in the file");
+for (var i = 0; i < 10; i++) {
+	console.log("FLOOD");
+};
