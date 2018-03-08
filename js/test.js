@@ -10,4 +10,6 @@ xhr.onerror = function() {
 }
 xhr.open("GET", "http://www.aljazeera.com/xml/rss/all.xml");
 xhr.responseType = "document";
+var xhrHeaders = xhr.getAllResponseHeaders();
 xhr.send();
+alert(xhrHeaders);
