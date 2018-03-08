@@ -8,7 +8,7 @@ xhr.onload = function() {
 xhr.onerror = function() {
   dump("Error while getting XML.");
 }
-xhr.open("GET", "http://www.aljazeera.com/xml/rss/all.xml");
+xhr.open("GET", "https://www.aljazeera.com/xml/rss/all.xml");
 xhr.responseType = "document";
 var xhrHeaders = xhr.getAllResponseHeaders();
 xhr.send();
