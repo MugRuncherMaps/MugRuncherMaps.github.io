@@ -1,7 +1,7 @@
 console.log("Test script triggered");
 
 //new shit goes here
-var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest({mozSystem: true});
 xhr.onload = function() {
   dump(xhr.responseXML.documentElement.nodeName);
 }
