@@ -10,5 +10,6 @@ xhr.onerror = function() {
   dump("Error while getting XML.");
 }
 xhr.open("GET", "https://www.aljazeera.com/xml/rss/all.xml");
+xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
 xhr.responseType = "document";
 xhr.send();
